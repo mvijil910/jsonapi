@@ -1,0 +1,4 @@
+-adding test files
+-Pushing updated README and changes to jsonapi
+-pushing updated code part 2
+-pushing new code to repo
