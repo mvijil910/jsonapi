@@ -48,15 +48,11 @@ def main():
         def decode_range(self, obj):
             return range(obj["start"], obj["stop"], obj["step"])
 
-    my_data = {
-    "hey": complex(1, 2),
-    "there": range(1, 10, 3),
-    73: False,
-    }
-    json_dump = json.dumps(my_data, cls=MyEncoder)
-    print(json_dump)
-    json_load = json.loads(json_dump, cls=MyDecoder)
-    print(json_load)
+    def json_dump(obj):
+        return json.dumps(obj, cls=MyEncoder)
+
+    def json_load(obj):
+        json.loads(json_dump, cls=MyDecoder)
     
 
     
