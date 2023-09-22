@@ -1,3 +1,5 @@
+-edited src folder struc
+-added CHANGELOG using git changes and init py file
 -adding test files
 -Pushing updated README and changes to jsonapi
 -pushing updated code part 2
