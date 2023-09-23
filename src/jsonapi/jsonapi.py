@@ -1,17 +1,5 @@
 import json
 
-def main(): 
-    my_data = {
-        "hey": complex(1, 2),
-        "there": range(1, 10, 3),
-        73: False,
-    }
-    dumpy = dumps(my_data)
-    loady = loads(dumpy)
-    
-    print('dumps: ', dumpy)
-    print('loads: ', loady)
-  
 class ExtendedEncoder(json.JSONEncoder):
     def default(self, obj):
         name = type(obj).__name__
@@ -57,9 +45,7 @@ def dumps(obj):
     
 def loads(obj): 
     return json.loads(obj, cls=MyDecoder)
-    
-    
-main()
+
 
 
     
